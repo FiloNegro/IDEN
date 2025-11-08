@@ -151,7 +151,7 @@ export default function Hero() {
             <img 
               src="/Nome.png" 
               alt="iDen Idraulica" 
-              className="h-96 sm:h-[28rem] md:h-[32rem] lg:h-[36rem] w-auto object-contain"
+              className="h-48 sm:h-[14rem] md:h-[16rem] lg:h-[18rem] w-auto object-contain"
               style={{ 
                 filter: 'drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 255, 255, 0.2))' 
               }}

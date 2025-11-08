@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 const services = [
   {
-    icon: Droplet,
-    title: 'Ristrutturazione bagni chiavi in mano',
-    description: 'Dallo smantellamento al collaudo finale, seguiamo ogni fase con precisione artigianale.',
+    icon: Home,
+    title: 'Ristrutturazione bagni e appartamenti chiavi in mano',
+    description: 'Dalla programmazione al collaudo finale, seguiamo ogni fase con precisione artigianale.',
     color: 'from-blue-500 to-cyan-500',
   },
   {
@@ -15,21 +15,21 @@ const services = [
     color: 'from-red-500 to-orange-500',
   },
   {
+    icon: Wrench,
+    title: 'Riparazioni',
+    description: 'Interventi puntuali per evitare danni e sprechi, dalle piccole alle grandi esigenze, sempre disponibili.',
+    color: 'from-slate-500 to-slate-600',
+  },
+  {
     icon: Wind,
     title: 'Condizionamento',
     description: 'Impianti silenziosi e su misura per il massimo comfort della tua casa.',
     color: 'from-cyan-500 to-blue-400',
   },
   {
-    icon: Wrench,
-    title: 'Riparazioni',
-    description: 'Interventi puntuali per evitare danni e sprechi, sempre disponibili.',
-    color: 'from-slate-500 to-slate-600',
-  },
-  {
-    icon: Home,
+    icon: Droplet,
     title: 'Impiantistica: Sanitaria / Riscaldamento / Gas',
-    description: 'Progettazione e installazione con precisione millimetrica per ogni tipo di impianto.',
+    description: 'Progettazione e installazione con precisione millimetrica per ogni tipo di impianto. Interventi rapidi, soluzioni efficienti e rispetto per l\'ambiente: il tuo idraulico di fiducia con un cuore green.',
     color: 'from-emerald-500 to-teal-500',
   },
 ];

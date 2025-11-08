@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -12,7 +12,7 @@ export default function Contact() {
           Parliamone
         </h2>
         <p className="text-xl text-center text-blue-200 mb-16">Siamo qui per ascoltare le tue esigenze</p>
-
+  
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -96,6 +96,16 @@ export default function Contact() {
             >
               <Mail className="w-5 h-5" />
               Invia email
+            </a>
+
+            <a
+              href="https://www.instagram.com/iden_idraulica_?igsh=djBjMjJscDI4NnY5&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-pink-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+            >
+              <Instagram className="w-5 h-5" />
+              Instagram
             </a>
           </div>
 
