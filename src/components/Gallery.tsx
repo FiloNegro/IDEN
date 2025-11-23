@@ -34,13 +34,13 @@ const categories: Category[] = [
     title: 'Condizionamento',
     folder: 'condizionamento',
     description: 'Sistemi di climatizzazione su misura per ogni ambiente. Installazioni professionali con impianti silenziosi e ad alta efficienza energetica.',
-    images: Array.from({ length: 6 }, (_, i) => `/gallery/condizionamento/${i + 1}.png`),
+    images: Array.from({ length: 4 }, (_, i) => `/gallery/condizionamento/${i + 1}.png`),
   },
   {
     title: 'Impiantistica: Sanitaria / Riscaldamento / Gas',
     folder: 'impiantistica',
     description: 'Progettazione e realizzazione di impianti completi: idrico-sanitari, termici e gas. Soluzioni personalizzate con certificazioni a norma di legge.',
-    images: Array.from({ length: 6 }, (_, i) => `/gallery/impiantistica/${i + 1}.png`),
+    images: Array.from({ length: 4 }, (_, i) => `/gallery/impiantistica/${i + 1}.png`),
   },
 ];
 
