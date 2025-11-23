@@ -14,7 +14,7 @@ const categories: Category[] = [
     title: 'Ristrutturazione bagni chiavi in mano',
     folder: 'ristrutturazione-bagni',
     description: 'Trasformazioni complete di bagni: dalla demolizione alla posa di sanitari, rivestimenti e finiture di pregio. Ogni progetto curato nei minimi dettagli per creare spazi moderni e funzionali.',
-    images: Array.from({ length: 6 }, (_, i) => `/gallery/ristrutturazione-bagni/${i + 1}.png`),
+    images: Array.from({ length: 4 }, (_, i) => `/gallery/ristrutturazione-bagni/${i + 1}.png`),
   },
   {
     title: 'Sostituzioni e manutenzione caldaie',
