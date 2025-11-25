@@ -22,6 +22,8 @@
 html {
   scroll-behavior: smooth;
   height: -webkit-fill-available;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -30,7 +32,8 @@ body {
   min-height: 100vh;
   position: fixed;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #root {
