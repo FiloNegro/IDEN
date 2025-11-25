@@ -8,7 +8,7 @@ import ScrollProgress from './components/ScrollProgress';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="w-full min-h-screen bg-slate-900 overflow-x-hidden">
       <ScrollProgress />
       <Hero />
       <BeforeAfter />

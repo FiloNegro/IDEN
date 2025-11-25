@@ -21,8 +21,21 @@
 
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: -webkit-fill-available;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
