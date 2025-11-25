@@ -84,14 +84,14 @@ export default function Hero() {
   };
 
   return (
-    <section ref={sectionRef} className="relative min-h-[120vh] flex items-center justify-center overflow-hidden bg-slate-900 py-16 sm:py-20 md:py-24 border-b-4 border-blue-500">
+    <section ref={sectionRef} className="relative min-h-screen sm:min-h-[110vh] md:min-h-[120vh] flex items-center justify-center overflow-hidden bg-slate-900 py-12 sm:py-16 md:py-20 border-b-2 sm:border-b-4 border-blue-500">
       
-      <canvas ref={canvasRef} className="absolute inset-0 opacity-60" />
+      <canvas ref={canvasRef} className="absolute inset-0 opacity-40 sm:opacity-60" />
 
-      <div className="relative z-10 text-center px-4 max-w-7xl w-full my-auto">
-        <div className="mb-8 sm:mb-10 md:mb-12 flex items-center justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16 flex-wrap">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-7xl w-full my-auto">
+        <div className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 flex items-center justify-center gap-4 sm:gap-6 md:gap-12 lg:gap-16 flex-col sm:flex-row">
           {/* Logo spostato a sinistra */}
-          <div className="relative group cursor-pointer flex-shrink-0 -ml-8 sm:-ml-12 md:-ml-16 lg:-ml-20">
+          <div className="relative group cursor-pointer flex-shrink-0 sm:-ml-8 md:-ml-12 lg:-ml-16">
             <div
               className={`transform transition-all duration-1000 ${
                 logoAnimated ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
@@ -99,13 +99,14 @@ export default function Hero() {
               style={{ transitionDelay: '0ms' }}
             >
               {/* Esagono con effetto glow */}
-              <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] mx-auto">
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto">
                 
                 {/* Glow effect sull'esagono */}
                 <div className="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity duration-500">
                   <img 
                     src="/Esagono.png" 
                     alt="Esagono Glow" 
+                    loading="eager"
                     className="w-full h-full object-contain blur-2xl scale-110"
                     style={{ filter: 'blur(40px) brightness(1.2)' }}
                   />
@@ -115,6 +116,7 @@ export default function Hero() {
                 <img 
                   src="/Esagono.png" 
                   alt="Esagono" 
+                  loading="eager"
                   className="relative w-full h-full object-contain transition-all duration-500 group-hover:scale-105"
                   style={{ 
                     filter: 'drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 255, 255, 0.2))' 
@@ -131,7 +133,8 @@ export default function Hero() {
                   <img 
                     src="/S.png" 
                     alt="S" 
-                    className="w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain transition-all duration-500 group-hover:scale-105"
+                    loading="eager"
+                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 object-contain transition-all duration-500 group-hover:scale-105"
                     style={{ 
                       filter: 'drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 255, 255, 0.2))' 
                     }}
@@ -151,7 +154,8 @@ export default function Hero() {
             <img 
               src="/Nome.png" 
               alt="iDen Idraulica" 
-              className="h-48 sm:h-[14rem] md:h-[16rem] lg:h-[18rem] w-auto object-contain"
+              loading="eager"
+              className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto object-contain"
               style={{ 
                 filter: 'drop-shadow(0 0 2px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 255, 255, 0.2))' 
               }}
@@ -160,7 +164,7 @@ export default function Hero() {
         </div>
 
         <h1
-          className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 px-2 transform transition-all duration-1000 ${
+          className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6 px-2 leading-tight transform transition-all duration-1000 ${
             logoAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           style={{ fontFamily: 'Montserrat Alternates, sans-serif', transitionDelay: '1200ms' }}
@@ -169,7 +173,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className={`text-base sm:text-lg md:text-xl lg:text-2xl text-blue-200 mb-3 sm:mb-4 px-2 transform transition-all duration-1000 ${
+          className={`text-sm sm:text-base md:text-lg lg:text-xl text-blue-200 mb-2 sm:mb-3 md:mb-4 px-2 transform transition-all duration-1000 ${
             logoAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           style={{ transitionDelay: '1400ms' }}
@@ -178,7 +182,7 @@ export default function Hero() {
         </p>
 
         <p
-          className={`text-sm sm:text-base md:text-lg lg:text-xl text-slate-300 mb-6 sm:mb-8 md:mb-10 px-4 transform transition-all duration-1000 ${
+          className={`text-xs sm:text-sm md:text-base lg:text-lg text-slate-300 mb-5 sm:mb-6 md:mb-8 lg:mb-10 px-4 transform transition-all duration-1000 ${
             logoAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           style={{ transitionDelay: '1600ms' }}

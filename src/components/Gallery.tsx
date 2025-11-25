@@ -112,6 +112,8 @@ export default function Gallery() {
                       <img
                         src={categories[currentSlide].images[imageIndex]}
                         alt={`${categories[currentSlide].title} - ${imageIndex + 1}`}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg">
@@ -148,6 +150,8 @@ export default function Gallery() {
                         <img
                           src={categories[currentSlide].images[imageIndex]}
                           alt={`${categories[currentSlide].title} - ${imageIndex + 1}`}
+                          loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                         <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg">
@@ -185,6 +189,8 @@ export default function Gallery() {
                         <img
                           src={categories[currentSlide].images[imageIndex]}
                           alt={`${categories[currentSlide].title} - ${imageIndex + 1}`}
+                          loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                         <div className="absolute top-3 left-3 bg-emerald-600/90 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-bold shadow-lg">
@@ -211,6 +217,8 @@ export default function Gallery() {
                   <img
                     src={image}
                     alt={`${categories[currentSlide].title} - ${imageIndex + 1}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
@@ -275,7 +283,9 @@ export default function Gallery() {
               <img
                 src={categories[selectedImage.categoryIndex].images[selectedImage.imageIndex]}
                 alt={`${categories[selectedImage.categoryIndex].title} - ${selectedImage.imageIndex + 1}`}
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-auto max-h-[70vh] object-contain rounded-2xl shadow-2xl"
               />
             </div>
           </div>
