@@ -43,7 +43,13 @@ const categories: Category[] = [
     title: 'Riparazioni',
     folder: 'riparazioni',
     description: 'Interventi rapidi e risolutivi per ogni tipo di guasto idraulico. Disponibilità immediata per emergenze e riparazioni urgenti.',
-    images: Array.from({ length: 4 }, (_, i) => `/gallery/riparazioni/${i + 1}.png`),
+    // Riordinate: foto 2 (prima) → foto 1 (dopo)
+    images: [
+      '/gallery/riparazioni/2.png',
+      '/gallery/riparazioni/1.png',
+      '/gallery/riparazioni/3.png',
+      '/gallery/riparazioni/4.png',
+    ],
     labels: ['Prima', 'Dopo', 'Prima', 'Dopo'],
     paired: true,
   },
